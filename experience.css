@@ -1,0 +1,105 @@
+/* Experience Section Styles */
+.section.experience {
+    background-color: var(--extra-light);
+    padding: 100px 1rem 5rem 1rem;
+  }
+  
+  .section__container {
+    max-width: var(--max-width);
+    margin: auto;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+  }
+  
+  .experience__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .experience__item {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experience__item h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience__item h3 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience__item span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  .experience__item p {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.5rem;
+  }
+  
+  /* Skills Section Styles */
+  .section.skills {
+    background-color: #ffffff;
+    padding: 100px 1rem 5rem 1rem;
+  }
+  
+  .skills__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .skill__item {
+    background-color: var(--extra-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-basis: calc(33.333% - 2rem);
+  }
+  
+  .skill__item i {
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+  
+  .skill__item h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 750px) {
+    .experience__content,
+    .skills__content {
+      flex-direction: column;
+    }
+  
+    .skill__item {
+      flex-basis: 100%;
+    }
+  }
+  
